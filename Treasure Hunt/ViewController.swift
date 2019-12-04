@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
 class ViewController: UIViewController {
+    
+    var locationManager: CLLocationManager?
+    var currentLocation: CLLocation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self as? CLLocationManagerDelegate
+        locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager?.requestAlwaysAuthorization()
     }
-
-
 }
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,114 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Treasure_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="89733" translatesAutoresizingMaskIntoConstraints="NO" id="qTA-g6-OjC" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="y91-Cq-8lZ">
+                                <rect key="frame" x="47" y="221.5" width="320" height="453.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treasure Hunt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h78-uG-As1" userLabel="Title">
+                                        <rect key="frame" x="22.5" y="0.0" width="275" height="53.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="49"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-12-vER" userLabel="Description">
+                                        <rect key="frame" x="0.0" y="99.5" width="320" height="274"/>
+                                        <string key="text">Treasure Hunt is an outdoor recreational activity, in which participants use a mobile device to seek containers, called "geocaches" or "caches", at specific locations marked by coordinates all over the Tulsa area.</string>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi0-fK-db4" userLabel="Start Button">
+                                        <rect key="frame" x="66" y="419.5" width="188" height="34"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <state key="normal" title="Start Treasure Hunting"/>
+                                        <connections>
+                                            <segue destination="Mnp-rg-7vK" kind="presentation" identifier="MapSegue" id="EcB-S0-nfR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="y91-Cq-8lZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DC7-iS-BqH"/>
+                            <constraint firstAttribute="bottom" secondItem="qTA-g6-OjC" secondAttribute="bottom" id="HOT-gE-Bdm"/>
+                            <constraint firstItem="y91-Cq-8lZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M1X-lP-RZ6"/>
+                            <constraint firstItem="qTA-g6-OjC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="YzO-6z-T6c"/>
+                            <constraint firstItem="qTA-g6-OjC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZmF-MB-hgE"/>
+                            <constraint firstItem="qTA-g6-OjC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h9d-sy-oau"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="4To-UY-iEY">
+            <objects>
+                <viewController id="Mnp-rg-7vK" customClass="MapViewController" customModule="Treasure_Hunt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yad-E5-7TL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gVJ-y1-VnK">
+                                <rect key="frame" x="36.5" y="797" width="341" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mej-gB-zOZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Close Button"/>
+                                        <connections>
+                                            <action selector="closeButton:" destination="Mnp-rg-7vK" eventType="touchUpInside" id="4fG-l4-gH6"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SvQ-xc-SaG">
+                                        <rect key="frame" x="114" y="0.0" width="227" height="33"/>
+                                        <segments>
+                                            <segment title="Standard"/>
+                                            <segment title="Satellite"/>
+                                            <segment title="Hybrid"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="mapChanged:" destination="Mnp-rg-7vK" eventType="valueChanged" id="fDE-g0-ieE"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2U-ws-UnQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="796"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="c2U-ws-UnQ" firstAttribute="top" secondItem="EDZ-0P-3Nk" secondAttribute="top" id="B3a-TL-4oE"/>
+                            <constraint firstAttribute="bottom" secondItem="gVJ-y1-VnK" secondAttribute="bottom" constant="13" id="RNX-rc-2Og"/>
+                            <constraint firstItem="gVJ-y1-VnK" firstAttribute="centerX" secondItem="yad-E5-7TL" secondAttribute="centerX" id="SeX-hv-XjI"/>
+                            <constraint firstItem="gVJ-y1-VnK" firstAttribute="top" secondItem="c2U-ws-UnQ" secondAttribute="bottom" constant="1" id="Yoa-mu-Oxt"/>
+                            <constraint firstItem="c2U-ws-UnQ" firstAttribute="leading" secondItem="EDZ-0P-3Nk" secondAttribute="leading" id="dPt-FE-Y6A"/>
+                            <constraint firstItem="c2U-ws-UnQ" firstAttribute="trailing" secondItem="EDZ-0P-3Nk" secondAttribute="trailing" id="uq4-k9-EcF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EDZ-0P-3Nk"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="c2U-ws-UnQ" id="iq6-fK-KLY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjb-T2-C4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900.00000000000011" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="89733" width="3490" height="4887"/>
+    </resources>
 </document>
