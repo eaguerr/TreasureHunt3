@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="89733" translatesAutoresizingMaskIntoConstraints="NO" id="qTA-g6-OjC" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000091" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="y91-Cq-8lZ">
                                 <rect key="frame" x="47" y="221.5" width="320" height="453.5"/>
