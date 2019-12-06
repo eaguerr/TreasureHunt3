@@ -29,7 +29,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-12-vER" userLabel="Description">
                                         <rect key="frame" x="0.0" y="99.5" width="320" height="274"/>
-                                        <string key="text">Treasure Hunt is an outdoor recreational activity, in which participants use a mobile device to seek containers, called "geocaches" or "caches", at specific locations marked by coordinates all over the Tulsa area.</string>
+                                        <string key="text">Treasure Hunt is an outdoor recreational activity, in which participants use a mobile device to seek containers, called "geocaches" or "caches", at specific locations marked by coordinates all over Oklahoma State.</string>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
