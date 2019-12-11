@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="y91-Cq-8lZ">
-                                <rect key="frame" x="47" y="221.5" width="320" height="453.5"/>
+                                <rect key="frame" x="47" y="236.5" width="320" height="423"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treasure Hunt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h78-uG-As1" userLabel="Title">
                                         <rect key="frame" x="22.5" y="0.0" width="275" height="53.5"/>
@@ -28,14 +28,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-12-vER" userLabel="Description">
-                                        <rect key="frame" x="0.0" y="99.5" width="320" height="274"/>
-                                        <string key="text">Treasure Hunt is an outdoor recreational activity, in which participants use a mobile device to seek containers, called "geocaches" or "caches", at specific locations marked by coordinates all over Oklahoma State.</string>
+                                        <rect key="frame" x="0.0" y="99.5" width="320" height="243.5"/>
+                                        <string key="text">Treasure Hunt is an outdoor recreational activity, in which participants use a mobile device to seek containers, called "geocaches" or "caches", at specific locations marked by coordinates all over Tulsa.</string>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi0-fK-db4" userLabel="Start Button">
-                                        <rect key="frame" x="66" y="419.5" width="188" height="34"/>
+                                        <rect key="frame" x="66" y="389" width="188" height="34"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                         <state key="normal" title="Start Treasure Hunting"/>
                                         <connections>
@@ -44,15 +44,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpG-7N-VDB">
+                                <rect key="frame" x="20" y="830" width="33" height="32"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="info.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <segue destination="x5M-rg-TBd" kind="showDetail" id="Mwi-TU-gwh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="y91-Cq-8lZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DC7-iS-BqH"/>
                             <constraint firstAttribute="bottom" secondItem="qTA-g6-OjC" secondAttribute="bottom" id="HOT-gE-Bdm"/>
+                            <constraint firstItem="RpG-7N-VDB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hj4-DZ-GgZ"/>
                             <constraint firstItem="y91-Cq-8lZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M1X-lP-RZ6"/>
                             <constraint firstItem="qTA-g6-OjC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="YzO-6z-T6c"/>
                             <constraint firstItem="qTA-g6-OjC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZmF-MB-hgE"/>
                             <constraint firstItem="qTA-g6-OjC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h9d-sy-oau"/>
+                            <constraint firstItem="RpG-7N-VDB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rby-Wp-nt1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -60,6 +72,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+        <!--Info Screen-->
+        <scene sceneID="agw-Ls-q64">
+            <objects>
+                <viewController id="x5M-rg-TBd" userLabel="Info Screen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ARj-8c-a9S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InfoScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hTZ-cZ-XNs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-fC-SfG">
+                                <rect key="frame" x="22" y="224" width="370" height="394"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Annotations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLj-Mn-0US" userLabel="AnnotationsTitle">
+                                        <rect key="frame" x="115.5" y="0.0" width="139.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Annotations Indicate Where the Caches Are Located at!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-im-7y9">
+                                        <rect key="frame" x="12.5" y="90.5" width="345" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Are The Numbers That Appear When I Touch a Map Annotation?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sG-r3-e8i" userLabel="Lat and Lon Title">
+                                        <rect key="frame" x="5" y="201.5" width="360" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kY-Eo-F0I">
+                                        <rect key="frame" x="0.0" y="312.5" width="370" height="81.5"/>
+                                        <string key="text">This Number are the Latitude and Longitude of the Geocaches. This are meant for use of third party Map Services. It is as simple as a copy and paste into the maps search bar.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="370" id="wOe-dB-kVc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qxe-fC-SfG" firstAttribute="centerX" secondItem="ARj-8c-a9S" secondAttribute="centerX" id="EUn-X5-aAR"/>
+                            <constraint firstItem="qxe-fC-SfG" firstAttribute="centerY" secondItem="ARj-8c-a9S" secondAttribute="centerY" id="c2b-2H-mly"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3n4-EF-V0t"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8RU-nc-K3M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="819.64285714285711"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="4To-UY-iEY">
@@ -119,5 +189,7 @@
     </scenes>
     <resources>
         <image name="89733" width="3490" height="4887"/>
+        <image name="InfoScreenBackground" width="202" height="366"/>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

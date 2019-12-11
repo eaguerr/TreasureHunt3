@@ -21,8 +21,8 @@ class MapViewController: UIViewController {
         centerOnUserLocation()
         
           }
-    let locationManager = CLLocationManager()
     
+    let locationManager = CLLocationManager()
     let annotationLocations = [
         ["title": "Riverside Cache", "latitude": 36.033846, "longitude": -95.981797, "subtitle": "36.1370970,-96.0965250"],
         ["title": "Peoria Cache", "latitude": 36.210999, "longitude": -95.976343, "subtitle": "36.210999,-95.976343"],
@@ -36,6 +36,8 @@ class MapViewController: UIViewController {
         
     ]
           
+    //Write Any Function Below
+    
     func createAnnotations(locations: [[String : Any]]) {
         for location in locations {
             let annotations = MKPointAnnotation()
@@ -53,6 +55,8 @@ class MapViewController: UIViewController {
             
         }
     }
+    
+    // Write Any IBAction
     
     @IBAction func closeButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
