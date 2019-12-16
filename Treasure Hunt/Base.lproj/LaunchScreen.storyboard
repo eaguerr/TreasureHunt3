@@ -21,9 +21,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By: Eduard Guerra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2n-cu-vpu">
-                                <rect key="frame" x="170.5" y="852" width="73" height="10"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By: Eduard Guerra        An Elon Musk Fan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2n-cu-vpu">
+                                <rect key="frame" x="147" y="822" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HFq-fL-ebQ"/>
+                                    <constraint firstAttribute="width" constant="120" id="OaA-35-ARy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,16 +35,16 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="y6S-Ix-CKK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="44K-xb-PB1"/>
-                            <constraint firstItem="o2n-cu-vpu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BCG-OV-mwK"/>
                             <constraint firstItem="y6S-Ix-CKK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HbA-dd-qzi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o2n-cu-vpu" secondAttribute="bottom" id="hsy-VZ-JTm"/>
+                            <constraint firstItem="o2n-cu-vpu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="W99-bP-qzK"/>
+                            <constraint firstItem="o2n-cu-vpu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="p70-wb-wY6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
 </document>

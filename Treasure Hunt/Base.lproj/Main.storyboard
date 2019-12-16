@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -19,23 +19,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="y91-Cq-8lZ">
-                                <rect key="frame" x="47" y="236.5" width="320" height="423"/>
+                                <rect key="frame" x="47" y="236.66666666666666" width="320" height="422.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treasure Hunt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h78-uG-As1" userLabel="Title">
-                                        <rect key="frame" x="22.5" y="0.0" width="275" height="53.5"/>
+                                        <rect key="frame" x="22.666666666666686" y="0.0" width="275" height="53.333333333333336"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="49"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="M1X-12-vER" userLabel="Description">
-                                        <rect key="frame" x="0.0" y="99.5" width="320" height="243.5"/>
+                                        <rect key="frame" x="0.0" y="99.333333333333329" width="320" height="243.33333333333337"/>
                                         <string key="text">Treasure Hunt is an outdoor recreational activity, in which participants use a mobile device to seek containers, called "geocaches" or "caches", at specific locations marked by coordinates all over Tulsa.</string>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xi0-fK-db4" userLabel="Start Button">
-                                        <rect key="frame" x="66" y="389" width="188" height="34"/>
+                                        <rect key="frame" x="66" y="388.66666666666674" width="188" height="34"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                         <state key="normal" title="Start Treasure Hunting"/>
                                         <connections>
@@ -45,9 +45,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpG-7N-VDB">
-                                <rect key="frame" x="20" y="830" width="33" height="32"/>
+                                <rect key="frame" x="20" y="830" width="59" height="32"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="info.circle" catalog="system">
+                                <state key="normal" title="How to?">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="large" weight="bold"/>
                                 </state>
                                 <connections>
@@ -81,34 +83,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InfoScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hTZ-cZ-XNs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="hTZ-cZ-XNs">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-fC-SfG">
-                                <rect key="frame" x="22" y="224" width="370" height="394"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-fC-SfG">
+                                <rect key="frame" x="22" y="188.33333333333334" width="370" height="465.33333333333326"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Annotations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLj-Mn-0US" userLabel="AnnotationsTitle">
-                                        <rect key="frame" x="115.5" y="0.0" width="139.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue Pin in The Middle of the Map?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDL-JV-Ocr">
+                                        <rect key="frame" x="45.333333333333343" y="0.0" width="279.66666666666663" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Annotations Indicate Where the Caches Are Located at!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-im-7y9">
-                                        <rect key="frame" x="12.5" y="90.5" width="345" height="41"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The blue pin is used to give you directions, just hover it over any geocache and press the  Directions button." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gx-1r-wMn">
+                                        <rect key="frame" x="4.3333333333333428" y="40.333333333333314" width="361.66666666666663" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Are The Numbers That Appear When I Touch a Map Annotation?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sG-r3-e8i" userLabel="Lat and Lon Title">
-                                        <rect key="frame" x="5" y="201.5" width="360" height="41"/>
+                                        <rect key="frame" x="5" y="121.33333333333336" width="360" height="40.666666666666671"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kY-Eo-F0I">
-                                        <rect key="frame" x="0.0" y="312.5" width="370" height="81.5"/>
+                                        <rect key="frame" x="0.0" y="181.99999999999997" width="370" height="81.333333333333343"/>
                                         <string key="text">This Number are the Latitude and Longitude of the Geocaches. This are meant for use of third party Map Services. It is as simple as a copy and paste into the maps search bar.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Annotations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLj-Mn-0US" userLabel="AnnotationsTitle">
+                                        <rect key="frame" x="115.33333333333333" y="283.33333333333337" width="139.33333333333337" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map Annotations Indicate Where the Caches Are Located at!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uL3-im-7y9">
+                                        <rect key="frame" x="12.666666666666657" y="323.66666666666663" width="345" height="40.666666666666686"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is a Geocache/Cache?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZI-pS-wKa">
+                                        <rect key="frame" x="71.333333333333329" y="384.33333333333326" width="227.66666666666669" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A collection of items of the same type stored in a hidden or inaccessible place." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aX-gL-WrV">
+                                        <rect key="frame" x="3" y="424.66666666666663" width="364" height="40.666666666666686"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -121,15 +146,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qxe-fC-SfG" firstAttribute="centerX" secondItem="ARj-8c-a9S" secondAttribute="centerX" id="EUn-X5-aAR"/>
-                            <constraint firstItem="qxe-fC-SfG" firstAttribute="centerY" secondItem="ARj-8c-a9S" secondAttribute="centerY" id="c2b-2H-mly"/>
+                            <constraint firstItem="hTZ-cZ-XNs" firstAttribute="trailing" secondItem="3n4-EF-V0t" secondAttribute="trailing" id="5h4-V2-Lh4"/>
+                            <constraint firstAttribute="bottom" secondItem="hTZ-cZ-XNs" secondAttribute="bottom" id="Xs2-E3-F90"/>
+                            <constraint firstItem="hTZ-cZ-XNs" firstAttribute="top" secondItem="3n4-EF-V0t" secondAttribute="top" id="avN-VT-vF6"/>
+                            <constraint firstItem="hTZ-cZ-XNs" firstAttribute="leading" secondItem="3n4-EF-V0t" secondAttribute="leading" id="b8K-4Q-SzU"/>
+                            <constraint firstItem="qxe-fC-SfG" firstAttribute="centerX" secondItem="ARj-8c-a9S" secondAttribute="centerX" id="fJI-YZ-UtI"/>
+                            <constraint firstItem="qxe-fC-SfG" firstAttribute="centerY" secondItem="ARj-8c-a9S" secondAttribute="centerY" id="hER-r9-jlG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3n4-EF-V0t"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RU-nc-K3M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="819.64285714285711"/>
+            <point key="canvasLocation" x="131.8840579710145" y="825.66964285714278"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="4To-UY-iEY">
@@ -177,18 +206,8 @@
                                     <outlet property="delegate" destination="Mnp-rg-7vK" id="rzI-3l-xgN"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yms-Ep-8J8">
-                                <rect key="frame" x="1" y="0.0" width="412" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="H4F-2h-ESu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter48" translatesAutoresizingMaskIntoConstraints="NO" id="1mN-Sf-uSl">
-                                <rect key="frame" x="189.5" y="363" width="35" height="35"/>
+                                <rect key="frame" x="189.66666666666666" y="363" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="6U5-eT-tSp"/>
                                     <constraint firstAttribute="width" constant="35" id="YDs-or-Zqz"/>
@@ -198,22 +217,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="c2U-ws-UnQ" firstAttribute="trailing" secondItem="EDZ-0P-3Nk" secondAttribute="trailing" id="4Vm-x1-nXy"/>
-                            <constraint firstItem="yms-Ep-8J8" firstAttribute="top" secondItem="EDZ-0P-3Nk" secondAttribute="top" id="HIA-d4-ypa"/>
                             <constraint firstItem="gVJ-y1-VnK" firstAttribute="leading" secondItem="EDZ-0P-3Nk" secondAttribute="leading" constant="16" id="Xx3-Y3-nSk"/>
                             <constraint firstAttribute="bottom" secondItem="gVJ-y1-VnK" secondAttribute="bottom" constant="13" id="cbY-SH-dPQ"/>
-                            <constraint firstItem="EDZ-0P-3Nk" firstAttribute="trailing" secondItem="yms-Ep-8J8" secondAttribute="trailing" constant="1" id="i5t-tl-td1"/>
                             <constraint firstItem="c2U-ws-UnQ" firstAttribute="leading" secondItem="EDZ-0P-3Nk" secondAttribute="leading" id="jIc-Jv-9yF"/>
                             <constraint firstItem="1mN-Sf-uSl" firstAttribute="centerX" secondItem="c2U-ws-UnQ" secondAttribute="centerX" id="n39-9H-1Mv"/>
                             <constraint firstItem="EDZ-0P-3Nk" firstAttribute="trailing" secondItem="gVJ-y1-VnK" secondAttribute="trailing" constant="16" id="o6J-dd-dSV"/>
                             <constraint firstItem="c2U-ws-UnQ" firstAttribute="top" secondItem="EDZ-0P-3Nk" secondAttribute="top" id="ofT-T2-Esk"/>
-                            <constraint firstItem="yms-Ep-8J8" firstAttribute="leading" secondItem="EDZ-0P-3Nk" secondAttribute="leading" constant="1" id="w8C-ri-QwQ"/>
                             <constraint firstItem="gVJ-y1-VnK" firstAttribute="top" secondItem="c2U-ws-UnQ" secondAttribute="bottom" constant="1" id="wTS-ZW-Eue"/>
                             <constraint firstItem="1mN-Sf-uSl" firstAttribute="centerY" secondItem="c2U-ws-UnQ" secondAttribute="centerY" constant="-17.5" id="xbc-My-6lj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EDZ-0P-3Nk"/>
                     </view>
                     <connections>
-                        <outlet property="addressLabel" destination="yms-Ep-8J8" id="SRu-Qx-Byg"/>
                         <outlet property="mapView" destination="c2U-ws-UnQ" id="iq6-fK-KLY"/>
                     </connections>
                 </viewController>
@@ -226,6 +241,5 @@
         <image name="89733" width="3490" height="4887"/>
         <image name="InfoScreenBackground" width="202" height="366"/>
         <image name="Twitter48" width="48" height="48"/>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
     </resources>
 </document>

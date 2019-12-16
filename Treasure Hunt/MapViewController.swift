@@ -14,8 +14,12 @@ class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
+    
+    var geoCoder = CLGeocoder()
+    var directionsArray: [MKDirections] = []
     var previousLocation: CLLocation?
-    let regionInMeters: Double = 25000
+    
+    let regionInMeters: Double = 18000
     let locationManager = CLLocationManager()
     let annotationLocations = [
         ["title": "Riverside Cache", "latitude": 36.033846, "longitude": -95.981797, "subtitle": "36.1370970,-96.0965250"],
@@ -96,6 +100,7 @@ class MapViewController: UIViewController {
         
         let request = createDirectionsRequest(from: location)
         let directions = MKDirections(request: request)
+        resetMapView(withNew: directions)
         
         directions.calculate { [unowned self] (response, error) in
             //Handle error if needed
@@ -116,10 +121,16 @@ class MapViewController: UIViewController {
         let request = MKDirections.Request()
         request.source = MKMapItem(placemark: startingLocation)
         request.destination = MKMapItem(placemark: destination)
-        request.transportType = .walking
+        request.transportType = .automobile
         request.requestsAlternateRoutes = false
         
         return request
+    }
+    
+    func resetMapView(withNew directions: MKDirections) {
+        mapView.removeOverlays(mapView.overlays)
+        directionsArray.append(directions)
+        let _ = directionsArray.map { $0.cancel() }
     }
     
     func createAnnotations(locations: [[String : Any]]) {
@@ -175,6 +186,8 @@ extension MapViewController: MKMapViewDelegate {
         guard center.distance(from: previousLocation) > 50 else { return }
         self.previousLocation = center
         
+        geoCoder.cancelGeocode()
+        
         geoCoder.reverseGeocodeLocation(center) { [weak self] (placemarks, error) in
             guard let self = self else { return }
             
@@ -199,7 +212,7 @@ extension MapViewController: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay as! MKPolyline)
-        renderer.strokeColor = .blue
+        renderer.strokeColor = .green
         
         return renderer
     }
