@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="89733" translatesAutoresizingMaskIntoConstraints="NO" id="qTA-g6-OjC" userLabel="Background">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000091" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="y91-Cq-8lZ">
                                 <rect key="frame" x="47" y="236.5" width="320" height="423"/>
@@ -59,6 +59,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RpG-7N-VDB" secondAttribute="trailing" symbolic="YES" id="1gK-ax-e79"/>
                             <constraint firstItem="y91-Cq-8lZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DC7-iS-BqH"/>
                             <constraint firstAttribute="bottom" secondItem="qTA-g6-OjC" secondAttribute="bottom" id="HOT-gE-Bdm"/>
                             <constraint firstItem="RpG-7N-VDB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hj4-DZ-GgZ"/>
@@ -87,7 +88,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-fC-SfG">
-                                <rect key="frame" x="22" y="187.5" width="370" height="467"/>
+                                <rect key="frame" x="22" y="116.5" width="370" height="609"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue Pin in The Middle of the Map?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDL-JV-Ocr">
                                         <rect key="frame" x="45.5" y="0.0" width="279.5" height="20.5"/>
@@ -134,6 +135,19 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A collection of items of the same type stored in a hidden or inaccessible place." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aX-gL-WrV">
                                         <rect key="frame" x="3" y="426" width="364" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Annotation Color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CfD-OL-RiY">
+                                        <rect key="frame" x="111" y="487" width="148.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kao-wg-vmM">
+                                        <rect key="frame" x="0.0" y="527.5" width="370" height="81.5"/>
+                                        <string key="text">White - Near or On a Tulsa Tech Campus.      Green - Near or On a Public Park Location.               Light Gray - Near or On a Public Building such as Museums and Libraries.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
